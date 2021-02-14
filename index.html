@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Happy Valentines Day">
+    <meta name="keywords" content="Valentines">
+    <meta name="author" content="Danger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script type="text/javascript">
+    document.addEventListener("mousemove", function(e){
+        var body = document.querySelector("body");
+        var heart = document.createElement("span");
+        var x = e.offsetX;
+        var y = e.offsetY;
+        heart.style.left = x + "px";
+        heart.style.top = y + "px";
+        var size = Math.random() * 100;
+        heart.style.width = 10+size + "px";
+        heart.style.height = 10+size + "px";
+        body.appendChild(heart);
+        setTimeout(function(){
+            heart.remove();
+
+        },1900);
+
+    })
+        function openwindow(){
+            window.open("https://www.youtube.com");
+        }
+    </script>
+
+    
+
+    <img class = "spongebob" src="spongeresized.png" alt="Spongebob">
+    <a class="middleheart" href="happyvalentinesday.html"></a>
+    <img class = "flowerbg" src="flower.png" alt="flowerbg">
+    <img class = "flowerbg1" src="flower.png" alt="flowerbg1">
+    <img class = "snail" src="snail1.png" alt="snail">
+    <img class = "patrick" src="patrick.png" alt="patrick">
+    <blockquote class="bobquote bubblespeech">I wonder, <em>what clicking the heart does?</em></blockquote>
+    <blockquote class="patrickquote bubblespeech1">So Jao😴</blockquote>
+    <div id="background-wrap">
+        <div class="bubble x1"></div>
+        <div class="bubble x2"></div>
+        <div class="bubble x3"></div>
+        <div class="bubble x4"></div>
+        <div class="bubble x5"></div>
+        <div class="bubble x6"></div>
+        <div class="bubble x7"></div>
+        <div class="bubble x8"></div>
+        <div class="bubble x9"></div>
+        <div class="bubble x10"></div>
+    </div>
+
+
+</body>
+</html>
+

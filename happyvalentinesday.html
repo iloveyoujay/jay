@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Happy Valentines Day">
+    <meta name="keywords" content="Valentines">
+    <meta name="author" content="Danger">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="spongeboblang.ttf">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style2.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+    document.addEventListener("mousemove", function(e){
+        var body = document.querySelector("body");
+        var heart = document.createElement("span1");
+        var x = e.offsetX;
+        var y = e.offsetY;
+        heart.style.left = x + "px";
+        heart.style.top = y + "px";
+        var size = Math.random() * 100;
+        heart.style.width = 10+size + "px";
+        heart.style.height = 10+size + "px";
+        body.appendChild(heart);
+        setTimeout(function(){
+            heart.remove();
+
+        },1900);
+
+    })
+    class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+  }
+
+  type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
+
+    // Check if deleting
+    if(this.isDeleting) {
+      // Remove char
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      // Add char
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    // Insert txt into element
+    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+    // Initial Type Speed
+    let typeSpeed = 250;
+
+    if(this.isDeleting) {
+      typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if(!this.isDeleting && this.txt === fullTxt) {
+      // Make pause at end
+      typeSpeed = this.wait;
+      // Set delete to true
+      this.isDeleting = true;
+    } else if(this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      // Move to next word
+      this.wordIndex++;
+      // Pause before start typing
+      typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+  }
+}
+
+
+// Init On DOM Load
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+function init() {
+  const txtElement = document.querySelector('.txt-type');
+  const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const wait = txtElement.getAttribute('data-wait');
+  // Init TypeWriter
+  new TypeWriter(txtElement, words, wait);
+}
+function w2gether(){
+  window.open("https://w2g.tv/v1qy69g7x79ea0el1l");
+}
+    </script>
+
+<img class = "ron" src="ron.png" alt="ron">
+<img class = "kim" src="kim.png" alt="kim">
+<img class="gumball" src="gumball.png" alt="gumball">
+
+<h1>Happy Valentines Day </h1>
+  <span class="txt-type" data-wait="3000" data-words='["Geylin🌹", "Jay😘","Wifey💍","Girlfie😍","Babygurl😏", "Love💖", "Queen🌻", "Everything🥺"]'></span>
+<div id="testimonial-slider" class="owl-carousel">
+    <div class="testimonial">
+        <span class="icon heart"></span>
+        <p class="description">
+          My Dear Queen Jay 🌻, <br> Falling in love with you opened so many new things in my life which I never knew existed. You are so perfect! Everything about you is so perfect. You make every moment of my life so special. You are so precious and I love to call you mine 💖 You are everything that the world could ever want.
+        </p>
+        <div class="testimonial-content">
+            <div class="pic"><img src="heart.gif" class=""alt=""></div>
+        </div>
+    </div>
+    <div class="testimonial">
+      <span class="icon heart"></span>
+      <p class="description">
+          When we flirted for the first time, I felt something that I never felt before. I fell in love with you and every next moment I love you more. And I'ma have you first always in my heart to keep you satisfied. You don't even know how much of a Queen you are to me. I am so insanely in love with you. Everything is so perfect when I'm with you. And I never wanna be without you and never will be 💗
+      </p>
+      <div class="testimonial-content">
+          <div class="pic"><img src="pleading.gif" class=""alt=""></div>
+      </div>
+    </div>
+    <div class="testimonial">
+        <span class="icon heart"></span>
+        <p class="description">
+        I just wanna hold you close to me forever. I love you the way no one else could ever. Gurl I am so crazy about you 🥴 And I know its me and you forever 💞 <br> So, would you like to be my valentines? 💘 <br> Accept the rose on next section by clicking it 😏
+        </p>
+        <div class="testimonial-content">
+            <div class="pic"><img src="kiss.gif" class=""alt=""></div>
+        </div>
+    </div>
+    <div>
+    <div class="container" onclick="w2gether()">
+      <div class="glass"></div>
+      <div class="thorns">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="glow"></div>
+      <div class="rose-leaves">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="rose-petals">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="sparkles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  
+    </div>
+</div>
+<div>
+
+	<span class="uwu word1">UWU</span>
+	<span class="weisameu word1">WE I SAME U</span>
+	<span class="damn word1">DAMNNNNNNNNN ;)</span>
+  <span class="scared word">I'm Scraded 🥺</span>
+  <span class="tutu word">Tututu 😘</span>
+  <span class="baby word">Babby 😍</span>
+</div>
+<div class="monster"><img src="rmonster.png" alt="monster"></div>
+<div>
+<div class="bgrose1"><img src="roses.png" alt="rose"></div>
+<div class="bgrose2"><img src="roses.png" alt="rose"></div>
+<div class="bgrose3"><img src="roses.png" alt="rose"></div>
+<div class="bgrose4"><img src="roses.png" alt="rose"></div>
+<div class="bgrose5"><img src="roses.png" alt="rose"></div>
+<div class="bgrose6"><img src="roses.png" alt="rose"></div>
+<div class="bgrose7"><img src="roses.png" alt="rose"></div>
+<div class="bgrose8"><img src="roses.png" alt="rose"></div>
+<div class="bgrose9"><img src="roses.png" alt="rose"></div>
+<div class="bgrose9"><img src="roses.png" alt="rose"></div>
+<div class="bgrose10"><img src="roses.png" alt="rose"></div>
+<div class="bgrose11"><img src="roses.png" alt="rose"></div>
+
+</div>
+
+
+<blockquote class="gumballquote bubblespeech">I like turtles too!</blockquote>
+
+
+    
+    
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+   <script>
+  $(document).ready(function(){
+      $("#testimonial-slider").owlCarousel({
+          items: 1,
+          loop: true,
+          itemsDesktop:[1000,1],
+          itemsDesktopSmall:[979,1],
+          itemsTablet:[768,1],
+          itemsMobile:[650,1],
+          pagination:true,
+          autoPlay:false,
+      });
+  });
+       </script>
+  
+
+
+</body>
+</html>
